@@ -1,10 +1,12 @@
 {
-  "name": "@lzblib/ts-react-navigation-web",
+  "name": "ts-react-navigation-web",
   "version": "1.0.0",
   "description": "ts编写的导航web页面",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -19,12 +21,18 @@
   "homepage": "https://github.com/lzbgithubcode/ts-react-navigation-web#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-legacy": "^4.0.4",
+    "@vitejs/plugin-react": "^4.0.0",
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "serve-static": "^1.15.0",
     "typescript": "^5.0.4",
-    "webpack": "^5.83.1"
+    "vite": "^4.3.8"
   }
 }
