@@ -1,2 +1,3 @@
 # ts-react-navigation-web
-ts编写的导航web页面
+
+ts 编写的导航 web 页面
