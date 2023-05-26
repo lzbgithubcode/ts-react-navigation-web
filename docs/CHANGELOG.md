@@ -1,4 +1,4 @@
-##### 一、 配置 eslint + prettier + styleLint + git-commit+Husky
+##### 一、 配置 eslint + prettier + styleLint + git-commit + Husky + lint-staged
 
 1. 安装 eslint / prettier, 
 

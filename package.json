@@ -4,10 +4,12 @@
   "description": "ts编写的导航web页面",
   "type": "module",
   "scripts": {
+    "prepare": "husky install",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --cache --fix --ext .js,.ts,.jsx,.tsx src"
+    "lint:fix": "eslint --cache --fix --ext .js,.ts,.jsx,.tsx ./src",
+    "format": "prettier --write \"./**/*.{html,tsx,ts,js,json}\""
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@types/node": "^20.2.4",
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
@@ -39,8 +43,10 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "express": "^4.18.2",
+    "husky": "^8.0.3",
     "prettier": "^2.8.8",
     "serve-static": "^1.15.0",
+    "terser": "^5.4.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.8"
   }
