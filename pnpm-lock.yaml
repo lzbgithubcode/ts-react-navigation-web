@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^20.2.4
   '@types/react': ^18.2.7
   '@types/react-dom': ^18.2.4
   '@typescript-eslint/eslint-plugin': ^5.59.7
@@ -27,6 +28,7 @@ dependencies:
   react-router-dom: registry.npmjs.org/react-router-dom/6.11.2_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
+  '@types/node': registry.npmjs.org/@types/node/20.2.4
   '@types/react': registry.npmjs.org/@types/react/18.2.7
   '@types/react-dom': registry.npmjs.org/@types/react-dom/18.2.4
   '@typescript-eslint/eslint-plugin': registry.npmjs.org/@typescript-eslint/eslint-plugin/5.59.7_4aqcww3lmhn63lzs6egjlcvgfi
@@ -42,7 +44,7 @@ devDependencies:
   prettier: registry.npmjs.org/prettier/2.8.8
   serve-static: registry.npmjs.org/serve-static/1.15.0
   typescript: registry.npmjs.org/typescript/5.0.4
-  vite: registry.npmjs.org/vite/4.3.8
+  vite: registry.npmjs.org/vite/4.3.8_@types+node@20.2.4
 
 packages:
 
@@ -1908,6 +1910,12 @@ packages:
     version: 7.0.12
     dev: true
 
+  registry.npmjs.org/@types/node/20.2.4:
+    resolution: {integrity: sha512-ni5f8Xlf4PwnT/Z3f0HURc3ZSw8UyrqMqmM3L5ysa7VjHu8c3FOmIo1nKCcLrV/OAmtf3N4kFna/aJqxsfEtnA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/node/-/node-20.2.4.tgz}
+    name: '@types/node'
+    version: 20.2.4
+    dev: true
+
   registry.npmjs.org/@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz}
     name: '@types/prop-types'
@@ -2112,7 +2120,7 @@ packages:
       magic-string: registry.npmjs.org/magic-string/0.30.0
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.11
       systemjs: registry.npmjs.org/systemjs/6.14.1
-      vite: registry.npmjs.org/vite/4.3.8
+      vite: registry.npmjs.org/vite/4.3.8_@types+node@20.2.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2130,7 +2138,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': registry.npmjs.org/@babel/plugin-transform-react-jsx-self/7.21.0_@babel+core@7.21.8
       '@babel/plugin-transform-react-jsx-source': registry.npmjs.org/@babel/plugin-transform-react-jsx-source/7.19.6_@babel+core@7.21.8
       react-refresh: registry.npmjs.org/react-refresh/0.14.0
-      vite: registry.npmjs.org/vite/4.3.8
+      vite: registry.npmjs.org/vite/4.3.8_@types+node@20.2.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4757,8 +4765,9 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  registry.npmjs.org/vite/4.3.8:
+  registry.npmjs.org/vite/4.3.8_@types+node@20.2.4:
     resolution: {integrity: sha512-uYB8PwN7hbMrf4j1xzGDk/lqjsZvCDbt/JC5dyfxc19Pg8kRm14LinK/uq+HSLNswZEoKmweGdtpbnxRtrAXiQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/vite/-/vite-4.3.8.tgz}
+    id: registry.npmjs.org/vite/4.3.8
     name: vite
     version: 4.3.8
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -4784,6 +4793,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': registry.npmjs.org/@types/node/20.2.4
       esbuild: registry.npmjs.org/esbuild/0.17.19
       postcss: registry.npmjs.org/postcss/8.4.23
       rollup: registry.npmjs.org/rollup/3.23.0
