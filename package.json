@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint:fix": "eslint --cache --fix --ext .js,.ts,.jsx,.tsx ./src",
-    "format": "prettier --write \"./**/*.{html,tsx,ts,js,json}\""
+    "format": "prettier --write \"./**/*.{html,tsx,ts,js,json}\" --ignore-unknown ."
   },
   "repository": {
     "type": "git",
