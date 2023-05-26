@@ -10,18 +10,16 @@ package-lock.json
 /coverage
 
 
+# .eslintcache
+.eslintcache
 
 # 环境
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.local
 
 # 日志
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.log
 
-# 输出we年
-/dist
+# 输出
+dist
+dist-ssr

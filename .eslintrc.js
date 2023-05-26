@@ -1,0 +1,34 @@
+module.exports = {
+  root: true,
+  // 指定环境
+  env: {
+    browser: true, // 浏览器全局变量
+    es2022: true,
+    node: true, // Node.js 的全局变量和 Node.js 的范围。
+  },
+  // 解析器
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  // 扩展配置
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+  ],
+
+  // 插件
+  plugins: ["react", "@typescript-eslint"],
+
+  // 配置规则
+  rules: {
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+  },
+};

@@ -5,13 +5,14 @@
     "module": "ESNext",   /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
     "lib": ["DOM", "DOM.Iterable", "ESNext"],   /* Specify library files to be included in the compilation. */
     "skipLibCheck": true,
-    "baseUrl": "",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
 
     /* Bundler mode */
-    // "moduleResolution": "bundler",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
     // "allowImportingTsExtensions": true,
     // "resolveJsonModule": true,
     "isolatedModules": true,
