@@ -4,6 +4,7 @@
   "description": "ts编写的导航web页面",
   "type": "module",
   "scripts": {
+    "preinstall": "node scripts/preinstall.js",
     "prepare": "husky install",
     "dev": "vite dev",
     "build": "vite build",
@@ -50,5 +51,8 @@
     "terser": "^5.4.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.8"
+  },
+  "engines": {
+     "node": ">14.18.0"
   }
 }
