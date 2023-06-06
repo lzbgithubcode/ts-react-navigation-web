@@ -27,9 +27,10 @@ export default ({ command, mode }: ConfigEnv) => {
 
     // 别名
     resolve: {
-      alias: {
-        '@': resolve(__dirname, 'src'),
-      },
+      alias: [
+        { find: /^~/, replacement: resolve(__dirname, './') },
+        { find: '@', replacement: resolve(__dirname, 'src') },
+      ],
       extensions: ['.ts', '.tsx'],
     },
     // vite 服务

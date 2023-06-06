@@ -1,5 +1,4 @@
-import 'antd/dist/reset.css';
-import { Provider } from 'react-redux';
+// import 'antd/dist/reset.css';
 import { ConfigProvider } from 'antd';
 
 function AppConfig() {
@@ -7,10 +6,6 @@ function AppConfig() {
 }
 
 function App() {
-  return (
-    <Provider>
-      <AppConfig />
-    </Provider>
-  );
+  return <AppConfig />;
 }
 export default App;

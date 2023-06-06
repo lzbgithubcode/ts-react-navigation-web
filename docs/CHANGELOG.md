@@ -35,5 +35,5 @@
 
 4. 路由
 * [react-router-dom]react的路由
-* [react-router-config]管理路由
+* [react-router-config]用于静态路由配置
 * [react-router] react-router-config的依耐
