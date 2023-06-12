@@ -2,7 +2,9 @@
 import { ConfigProvider } from 'antd';
 
 function AppConfig() {
-  return <ConfigProvider></ConfigProvider>;
+  return (
+    <ConfigProvider direction="rtl" componentSize="middle"></ConfigProvider>
+  );
 }
 
 function App() {
