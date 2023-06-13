@@ -1,6 +1,7 @@
 {
   "name": "ts-react-navigation-web",
   "version": "1.0.0",
+  "private": true,
   "description": "ts编写的导航web页面",
   "type": "module",
   "scripts": {
@@ -29,7 +30,6 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.7",
     "react-router": "^6.12.1",
-    "react-router-config": "^5.1.1",
     "react-router-dom": "^6.12.1"
   },
   "devDependencies": {

@@ -1,22 +1,21 @@
-import { RouteConfig } from 'react-router-config'; // 路由的配置
 import { BasicLayout } from '@/layouts';
 import React from 'react';
+import { createBrowserRouter } from 'react-router-dom';
 
-const staticRoutes: RouteConfig[] = [
+// https://github.com/remix-run/react-router/blob/dev/examples/data-router/src/app.tsx
+
+const staticRoutes = createBrowserRouter([
   {
     path: '/',
-    title: '/',
-    component: BasicLayout,
-    routes: [
+    Component: BasicLayout,
+    children: [
       {
         path: '/home',
-        title: '首页',
         icon: 'home',
-        component: React.lazy(() => import('@/pages/home')),
+        Component: React.lazy(() => import('@/pages/home')),
       },
       {
         path: '/about',
-        title: '关于我们',
         icon: 'home',
         component: React.lazy(() => import('@/pages/about')),
       },
@@ -27,6 +26,6 @@ const staticRoutes: RouteConfig[] = [
     title: '404',
     component: React.lazy(() => import('@/pages/error/NoFund404')),
   },
-];
+]);
 
 export default staticRoutes;

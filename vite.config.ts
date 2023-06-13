@@ -6,11 +6,12 @@ import reactPlugin from '@vitejs/plugin-react';
 
 const plugins = [];
 
+plugins.push(legacy({ targets: ['defaults', 'not IE 11'] }));
+
 // 1. vite的react插件 -自动刷新与babel编译
 plugins.push(reactPlugin({ include: /\.(js|jsx|ts|tsx)$/ }));
 
 // 2. 兼容传统浏览器
-plugins.push(legacy({ targets: ['defaults', 'not IE 11'] }));
 
 // vite 配置
 export default ({ command, mode }: ConfigEnv) => {

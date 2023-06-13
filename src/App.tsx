@@ -1,13 +1,27 @@
-// import 'antd/dist/reset.css';
-import { ConfigProvider } from 'antd';
+import 'antd/dist/reset.css';
+import AppRoutes from './routes';
 
-function AppConfig() {
+// import { ConfigProvider, Button, theme } from 'antd';
+
+const AppConfig = () => {
   return (
-    <ConfigProvider direction="rtl" componentSize="middle"></ConfigProvider>
+    // <ConfigProvider
+    //   direction="rtl"
+    //   componentSize="middle"
+    //   theme={{
+    //     token: { colorPrimary: '#00b96b' },
+    //     algorithm: theme.darkAlgorithm,
+    //   }}
+    // >
+    //   <Button>我是内容</Button>
+    // </ConfigProvider>
+    <>
+      <AppRoutes></AppRoutes>
+    </>
   );
-}
+};
 
-function App() {
+const App = () => {
   return <AppConfig />;
-}
+};
 export default App;
