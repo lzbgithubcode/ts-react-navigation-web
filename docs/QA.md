@@ -7,6 +7,8 @@
 
 ##### 2.github访问443问题
 解决方案: https://houbb.github.io/2021/03/06/github-access
+方案2： 查看`github.com`的[ip地址查询](https://whatismyipaddress.com/hostname-ip)
+`配置给本地/etc/host`
 
 
 ##### 3.git访问“git Empty reply from server”
