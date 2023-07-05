@@ -35,7 +35,7 @@
 
 4. 路由
 * [react-router-dom]react的路由
-* [react-router-config]用于静态路由配置
+* [react-router-config]用于静态路由配置-v6版本已经弃用 使用useRoutes
 * [react-router] react-router-config的依耐 -v6版本已经弃用
 
 

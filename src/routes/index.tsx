@@ -1,9 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-// import staticRoutes from './staticRoutes';
+import { RouterProvider } from 'react-router-dom';
+import { staticRoutes } from './staticRoutes';
 
-const AppRoutes: React.FC = () => {
-  return <BrowserRouter>{}</BrowserRouter>;
+const AppRoutes = () => {
+  return <RouterProvider router={staticRoutes}></RouterProvider>;
 };
 
 export default AppRoutes;

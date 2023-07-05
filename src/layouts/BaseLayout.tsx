@@ -1,12 +1,13 @@
-import React from 'react';
-import { RouteConfigComponentProps, renderRoutes } from 'react-router-config';
+import { Outlet } from 'react-router';
 
-const BasicLayout: React.FC<RouteConfigComponentProps> = (props) => {
-  const { route } = props;
+const BasicLayout = () => {
   return (
     <div>
       BasicLayout
-      <div style={{ background: '#222222' }}>{renderRoutes(route?.routes)}</div>
+      <div style={{ background: '#222222' }}>
+        {/* 渲染子路由 */}
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };
