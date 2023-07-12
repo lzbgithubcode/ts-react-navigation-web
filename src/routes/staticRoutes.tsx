@@ -10,7 +10,6 @@ const routes: RouteObject[] = [
     Component: BasicLayout, //渲染组件
     children: [
       {
-        path: '/home',
         index: true, // 子路由的默认路由
         Component: lazy(() => import('@/pages/home')),
       },
@@ -21,7 +20,7 @@ const routes: RouteObject[] = [
     ],
   },
   {
-    path: '/404',
+    path: '*',
     Component: lazy(() => import('@/pages/error/NoFund404')),
   },
 ];

@@ -14,3 +14,10 @@
 
 ##### 3.git访问“git Empty reply from server”
 解决方案：`git config  http.sslVerify "true" `
+
+
+##### 4. vite 报错 `Failed to resolve entry for package "rc-picker". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]`
+
+
+
+

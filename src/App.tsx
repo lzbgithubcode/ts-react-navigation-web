@@ -1,7 +1,8 @@
 import 'antd/dist/reset.css';
 import AppRoutes from './routes';
 
-// import { ConfigProvider, Button, theme } from 'antd';
+// import { ConfigProvider, theme } from 'antd';
+// import { StyleProvider } from '@ant-design/cssinjs';
 
 const AppConfig = () => {
   return (
@@ -13,10 +14,12 @@ const AppConfig = () => {
     //     algorithm: theme.darkAlgorithm,
     //   }}
     // >
-    //   <Button>我是内容</Button>
+    //   <StyleProvider hashPriority="high">
+
+    //   </StyleProvider>
     // </ConfigProvider>
     <>
-      <AppRoutes></AppRoutes>
+      <AppRoutes />
     </>
   );
 };

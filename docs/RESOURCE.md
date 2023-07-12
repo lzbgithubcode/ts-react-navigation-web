@@ -15,3 +15,5 @@ https://github.com/laoer536/vite3.0-react18-TypeScript-router-dom6-mobx6-Eslint-
 https://github.com/985563349/react-vite-template/blob/main/vite.config.ts
 https://github.com/huibizhang/template-vite-react-ts-tailwind-v3/blob/master/vite.config.ts
 https://github.com/EverSeenTOTOTO/browser-app-boilerplate/blob/react-vite-ssr/makefile
+
+项目模版地址 - https://github.com/NLRX-WJC/react-antd-admin-template
