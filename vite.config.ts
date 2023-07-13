@@ -1,19 +1,18 @@
 import { defineConfig, loadEnv } from 'vite';
+import { resolve } from 'path';
 import type { ConfigEnv } from 'vite';
-import { resolve } from 'node:path';
 import legacy from '@vitejs/plugin-legacy';
 import reactPlugin from '@vitejs/plugin-react';
 
 const plugins = [];
 
+// 1.浏览器兼容
 plugins.push(legacy({ targets: ['defaults', 'not IE 11'] }));
 
-// 1. vite的react插件 -自动刷新与babel编译
-plugins.push(reactPlugin({ include: /\.(js|jsx|ts|tsx)$/ }));
+// 2. vite的react插件 -自动刷新与babel编译
+plugins.push(reactPlugin());
 
-// 2. 兼容传统浏览器
-
-// vite 配置
+// https://vitejs.dev/config/
 export default ({ command, mode }: ConfigEnv) => {
   const currentEnv = loadEnv(mode, process.cwd());
   console.log('当前模式', command);
@@ -23,17 +22,15 @@ export default ({ command, mode }: ConfigEnv) => {
     build: {
       outDir: 'dist',
     },
-    // 插件
-    plugins: plugins,
-
-    // 别名
+    //     // 别名
     resolve: {
       alias: [
         { find: /^~/, replacement: resolve(__dirname, './') },
         { find: '@', replacement: resolve(__dirname, 'src') },
       ],
-      extensions: ['.ts', '.tsx'],
     },
+    // 插件
+    plugins: plugins,
     // vite 服务
     server: {
       host: true,

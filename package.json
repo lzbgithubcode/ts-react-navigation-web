@@ -7,7 +7,7 @@
   "scripts": {
     "preinstall": "node scripts/preinstall.js",
     "prepare": "husky install",
-    "dev": "vite dev",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint:fix": "eslint --cache --fix --ext .js,.ts,.jsx,.tsx ./src",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/lzbgithubcode/ts-react-navigation-web#readme",
   "dependencies": {
-    "antd": "^5.7.0",
+    "antd": "^5.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
@@ -35,16 +35,15 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
-    "@types/node": "^20.4.1",
+    "@types/node": "^20.4.2",
     "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
+    "@types/react-dom": "^18.2.7",
     "@types/react-router-config": "^5.0.7",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-legacy": "^4.1.0",
     "@vitejs/plugin-react": "^4.0.3",
     "compression": "^1.7.4",
-    "esbuild": "0.14.34",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -60,7 +59,7 @@
     "serve-static": "^1.15.0",
     "terser": "^5.19.0",
     "typescript": "^5.1.6",
-    "vite": "^2.7.1"
+    "vite": "^4.4.3"
   },
   "engines": {
     "node": ">14.18.0"

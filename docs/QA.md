@@ -16,7 +16,12 @@
 解决方案：`git config  http.sslVerify "true" `
 
 
-##### 4. vite 报错 `Failed to resolve entry for package "rc-picker". The package may have incorrect main/module/exports specified in its package.json. [plugin vite:dep-pre-bundle]`
+##### 4. vite 报错 `[plugin: vite:dep-pre-bundle] Failed to resolve entry for package "@ant-design/colors". The package may have incorrect main/module/exports specified in its package.json`
+
+解决方案: resolve中的extensions选项去掉，才能在.vite中预编译文件
+
+##### 5. vite 报错`vite Transforming const to the configured target environment ("ES5") is not supported yet`
+解决方案: 更新vite版本是最新的版本`"vite": "^4.2.0"`
 
 
 
