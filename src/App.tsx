@@ -7,7 +7,7 @@ import zhCN from 'antd/locale/zh_CN';
 const AppConfig = () => {
   return (
     <ConfigProvider
-      direction="rtl"
+      direction="ltr"
       componentSize="middle"
       locale={zhCN}
       theme={{

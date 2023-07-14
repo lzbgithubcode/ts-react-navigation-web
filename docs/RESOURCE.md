@@ -17,3 +17,5 @@ https://github.com/huibizhang/template-vite-react-ts-tailwind-v3/blob/master/vit
 https://github.com/EverSeenTOTOTO/browser-app-boilerplate/blob/react-vite-ssr/makefile
 
 项目模版地址 - https://github.com/NLRX-WJC/react-antd-admin-template
+https://github.com/jzfai/react-admin-ts/blob/master/src/layout/Layout.tsx
+https://ai-bot.cn/
