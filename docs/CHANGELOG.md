@@ -39,5 +39,12 @@
 * [react-router] react-router-config的依耐 -v6版本已经弃用
 
 
-二、 安装组件库
+二、 安装业务插件
+
+1. 组件库
+
 * [antd组件库](https://ant.design/docs/react/introduce-cn)
+
+2. 状态管理
+* [react-redux](https://github.com/reduxjs/react-redux)组件访问状态
+* [Redux Toolkit](https://github.com/reduxjs/react-redux)编写rudex的工具集合

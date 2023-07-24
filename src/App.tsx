@@ -3,6 +3,8 @@ import AppRoutes from './routes';
 
 import { ConfigProvider, theme } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
+import { Provider } from 'react-redux';
+import store from './store';
 
 const AppConfig = () => {
   return (
@@ -15,7 +17,9 @@ const AppConfig = () => {
         algorithm: theme.darkAlgorithm,
       }}
     >
-      <AppRoutes />
+      <Provider store={store}>
+        <AppRoutes />
+      </Provider>
     </ConfigProvider>
   );
 };
